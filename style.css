@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CDD5E0;
+}
+
+.pag {
+    background-image: url('./img/bg-image.svg');
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Make sure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100vh; 
+}
+
+header {
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgba(255, 255, 255, 0.205); /* Use rgba to provide some transparency */
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    padding: 30px; /* Add some padding for better visualization */
+    width: 900px; /* Make sure it has some width */
+     /* Control the maximum width */
+    height: 520px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+/*.name_email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid green;
+}*/
+
+/*.seletor {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}*/
+
+/* Additional styling for better visualization */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 48px;
+    height: 48px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    border-radius: 14px;
+}
+
+.button-body {
+    text-align: right;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #F8FAFC;
+    color: #4036A9;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    height: 60px;
+    margin-top: 14px;
+    font-size: 20px;
+
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.name_text {
+    display: flex;
+    justify-content: flex-start;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #F8FAFC;
+    cursor: pointer;
+}
+
+textarea {
+    height: 160px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h1  {
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #F8FAFC;
+    font-size: 64px;
+    font-weight: 800;
+    
+   
+}
+
+p { 
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #F8FAFC;
+    font-size: 32px;
+    font-weight: 400;
+    
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px; 
+   
+    margin-bottom: 20px;
+    height: 300px;
+    gap: 20px;
+
+}
+
+select, input , option{
+    height: 60px;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+footer , a , span{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    color: #F8FAFC;
+}
+
+
+
+
+@media screen and (max-width:925px){
+    .top {
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    header {
+        margin-left: 30px;
+    }
+
+    .form-box {
+        width: 370px;
+        height: 700px;
+    }
+
+    select, input , option{
+        height: 50px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    textarea {
+        height: 150px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 700;
+    }
+
+    .title {
+        width: 370px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
