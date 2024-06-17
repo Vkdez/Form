@@ -114,6 +114,10 @@ input, select, textarea {
     border-radius: 14px;
 }
 
+input {
+    outline: 0;
+}
+
 .button-body {
     text-align: right;
 }
